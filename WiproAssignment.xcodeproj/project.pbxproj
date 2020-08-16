@@ -3,18 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05BB97B94AC9C4DBE783CE31 /* Pods_WiproAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426B1843A7DA970644CB0DFF /* Pods_WiproAssignmentTests.framework */; };
+		0F9D46FF235A7B5B531EDF9F /* Pods_WiproAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46205A8589E8B8C7F08E01A9 /* Pods_WiproAssignment.framework */; };
+		39FC3E41D998C6773353BC8C /* Pods_WiproAssignment_WiproAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD73413B0544BDE364BAA75 /* Pods_WiproAssignment_WiproAssignmentUITests.framework */; };
 		577917B224E7137300A6A8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917B124E7137300A6A8F7 /* AppDelegate.swift */; };
 		577917B424E7137300A6A8F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917B324E7137300A6A8F7 /* SceneDelegate.swift */; };
-		577917B624E7137300A6A8F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917B524E7137300A6A8F7 /* ViewController.swift */; };
 		577917B924E7137300A6A8F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577917B724E7137300A6A8F7 /* Main.storyboard */; };
 		577917BB24E7137800A6A8F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577917BA24E7137800A6A8F7 /* Assets.xcassets */; };
 		577917BE24E7137800A6A8F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577917BC24E7137800A6A8F7 /* LaunchScreen.storyboard */; };
 		577917C924E7137800A6A8F7 /* WiproAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917C824E7137800A6A8F7 /* WiproAssignmentTests.swift */; };
 		577917D424E7137800A6A8F7 /* WiproAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */; };
+		57D44CB324E7EE9300B36C14 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */; };
+		57D44CB524E7EEB300B36C14 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB424E7EEB300B36C14 /* Array+Extension.swift */; };
+		57D44CB724E7EEF000B36C14 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */; };
+		57D44CB924E7EF0D00B36C14 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB824E7EF0D00B36C14 /* UIImageView+Extension.swift */; };
+		57D44CBB24E7EF4200B36C14 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CBA24E7EF4200B36C14 /* AppStoryboard.swift */; };
+		57D44CBF24E7EFB400B36C14 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CBE24E7EFB400B36C14 /* Album.swift */; };
+		57D44CC124E7F02E00B36C14 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CC024E7F02E00B36C14 /* APIError.swift */; };
+		57D44CC324E7F04000B36C14 /* Reachablity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CC224E7F04000B36C14 /* Reachablity.swift */; };
+		57D44CC524E7F05600B36C14 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CC424E7F05600B36C14 /* ResponseParser.swift */; };
+		57D44CC724E7F06C00B36C14 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CC624E7F06C00B36C14 /* APIRouter.swift */; };
+		57D44CC924E7F07E00B36C14 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CC824E7F07E00B36C14 /* SessionManager.swift */; };
+		57D44CCD24E7F76300B36C14 /* AlbumSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CCC24E7F76300B36C14 /* AlbumSearchViewController.swift */; };
+		57D44CCF24E7F78500B36C14 /* AlbumSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CCE24E7F78500B36C14 /* AlbumSearchResultViewController.swift */; };
+		57D44CD124E7F81100B36C14 /* AlbumSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CD024E7F81100B36C14 /* AlbumSearchViewModel.swift */; };
+		57D44CD324E7F92D00B36C14 /* UINavigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CD224E7F92D00B36C14 /* UINavigation+Extension.swift */; };
+		57D44CD724E7FA4300B36C14 /* AlbumListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CD524E7FA4300B36C14 /* AlbumListTableViewCell.swift */; };
+		57D44CD824E7FA4300B36C14 /* AlbumListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57D44CD624E7FA4300B36C14 /* AlbumListTableViewCell.xib */; };
+		57D44CDA24E7FDE200B36C14 /* AlbumListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CD924E7FDE200B36C14 /* AlbumListCellViewModel.swift */; };
+		57D44CDC24E8031200B36C14 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CDB24E8031200B36C14 /* MainCoordinator.swift */; };
+		57D44CDE24E8067800B36C14 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CDD24E8067800B36C14 /* Coordinator.swift */; };
+		57D44CE024E806AC00B36C14 /* AlbumSearchResultCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CDF24E806AC00B36C14 /* AlbumSearchResultCoordinator.swift */; };
+		57D44CE224E8158000B36C14 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE124E8158000B36C14 /* UITableView+Extension.swift */; };
+		57D44CE524E82B2000B36C14 /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */; };
+		57D44CE724E83A6600B36C14 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE624E83A6600B36C14 /* AlbumDetailViewController.swift */; };
+		57D44CE924E83BE200B36C14 /* AlbumDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE824E83BE200B36C14 /* AlbumDetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F8A930A0FE4107FDA149FEB /* Pods-WiproAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-WiproAssignmentTests/Pods-WiproAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AD73413B0544BDE364BAA75 /* Pods_WiproAssignment_WiproAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproAssignment_WiproAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D661C47034FB71C0E392A3A /* Pods-WiproAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-WiproAssignmentTests/Pods-WiproAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		426B1843A7DA970644CB0DFF /* Pods_WiproAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46205A8589E8B8C7F08E01A9 /* Pods_WiproAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D1CAF0C1D820D13D9ECE3E /* Pods-WiproAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment.debug.xcconfig"; path = "Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		577917AE24E7137300A6A8F7 /* WiproAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577917B124E7137300A6A8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577917B324E7137300A6A8F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		577917B524E7137300A6A8F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		577917B824E7137300A6A8F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577917BA24E7137800A6A8F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577917BD24E7137800A6A8F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +81,34 @@
 		577917CF24E7137800A6A8F7 /* WiproAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproAssignmentUITests.swift; sourceTree = "<group>"; };
 		577917D524E7137800A6A8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		57D44CB424E7EEB300B36C14 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		57D44CB824E7EF0D00B36C14 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		57D44CBA24E7EF4200B36C14 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		57D44CBE24E7EFB400B36C14 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		57D44CC024E7F02E00B36C14 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		57D44CC224E7F04000B36C14 /* Reachablity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachablity.swift; sourceTree = "<group>"; };
+		57D44CC424E7F05600B36C14 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		57D44CC624E7F06C00B36C14 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		57D44CC824E7F07E00B36C14 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		57D44CCC24E7F76300B36C14 /* AlbumSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchViewController.swift; sourceTree = "<group>"; };
+		57D44CCE24E7F78500B36C14 /* AlbumSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchResultViewController.swift; sourceTree = "<group>"; };
+		57D44CD024E7F81100B36C14 /* AlbumSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchViewModel.swift; sourceTree = "<group>"; };
+		57D44CD224E7F92D00B36C14 /* UINavigation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extension.swift"; sourceTree = "<group>"; };
+		57D44CD524E7FA4300B36C14 /* AlbumListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListTableViewCell.swift; sourceTree = "<group>"; };
+		57D44CD624E7FA4300B36C14 /* AlbumListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListTableViewCell.xib; sourceTree = "<group>"; };
+		57D44CD924E7FDE200B36C14 /* AlbumListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListCellViewModel.swift; sourceTree = "<group>"; };
+		57D44CDB24E8031200B36C14 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		57D44CDD24E8067800B36C14 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		57D44CDF24E806AC00B36C14 /* AlbumSearchResultCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchResultCoordinator.swift; sourceTree = "<group>"; };
+		57D44CE124E8158000B36C14 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
+		57D44CE624E83A6600B36C14 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		57D44CE824E83BE200B36C14 /* AlbumDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailCoordinator.swift; sourceTree = "<group>"; };
+		A48F337DC44C824D5C92DBA5 /* Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D61124D896D55CBC9187FA01 /* Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FC6C9D16B078E8B3406DFA /* Pods-WiproAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment.release.xcconfig"; path = "Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9D46FF235A7B5B531EDF9F /* Pods_WiproAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BB97B94AC9C4DBE783CE31 /* Pods_WiproAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +132,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FC3E41D998C6773353BC8C /* Pods_WiproAssignment_WiproAssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43E8CD25EC9A1D9580B4BD25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47D1CAF0C1D820D13D9ECE3E /* Pods-WiproAssignment.debug.xcconfig */,
+				D6FC6C9D16B078E8B3406DFA /* Pods-WiproAssignment.release.xcconfig */,
+				D61124D896D55CBC9187FA01 /* Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig */,
+				A48F337DC44C824D5C92DBA5 /* Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig */,
+				2F8A930A0FE4107FDA149FEB /* Pods-WiproAssignmentTests.debug.xcconfig */,
+				3D661C47034FB71C0E392A3A /* Pods-WiproAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		577917A524E7137300A6A8F7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +159,8 @@
 				577917C724E7137800A6A8F7 /* WiproAssignmentTests */,
 				577917D224E7137800A6A8F7 /* WiproAssignmentUITests */,
 				577917AF24E7137300A6A8F7 /* Products */,
+				43E8CD25EC9A1D9580B4BD25 /* Pods */,
+				7354AA3E17FB483FBFE61F32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +177,13 @@
 		577917B024E7137300A6A8F7 /* WiproAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				577917B124E7137300A6A8F7 /* AppDelegate.swift */,
-				577917B324E7137300A6A8F7 /* SceneDelegate.swift */,
-				577917B524E7137300A6A8F7 /* ViewController.swift */,
-				577917B724E7137300A6A8F7 /* Main.storyboard */,
+				57D44CE324E81F0800B36C14 /* AppDelegate */,
+				57D44CB124E7EE2B00B36C14 /* Helper */,
+				57D44CB024E7EE1500B36C14 /* ViewModel */,
+				57D44CAF24E7ED4E00B36C14 /* Home */,
+				57D44CAD24E7ED1100B36C14 /* Network */,
+				57D44CAC24E7ED0600B36C14 /* Model */,
+				57D44CAA24E7EC9C00B36C14 /* Coordinators */,
 				577917BA24E7137800A6A8F7 /* Assets.xcassets */,
 				577917BC24E7137800A6A8F7 /* LaunchScreen.storyboard */,
 				577917BF24E7137800A6A8F7 /* Info.plist */,
@@ -128,6 +209,117 @@
 			path = WiproAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		57D44CAA24E7EC9C00B36C14 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CDB24E8031200B36C14 /* MainCoordinator.swift */,
+				57D44CDD24E8067800B36C14 /* Coordinator.swift */,
+				57D44CDF24E806AC00B36C14 /* AlbumSearchResultCoordinator.swift */,
+				57D44CE824E83BE200B36C14 /* AlbumDetailCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		57D44CAB24E7ECEA00B36C14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */,
+				57D44CB424E7EEB300B36C14 /* Array+Extension.swift */,
+				57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */,
+				57D44CB824E7EF0D00B36C14 /* UIImageView+Extension.swift */,
+				57D44CD224E7F92D00B36C14 /* UINavigation+Extension.swift */,
+				57D44CE124E8158000B36C14 /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57D44CAC24E7ED0600B36C14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CBE24E7EFB400B36C14 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57D44CAD24E7ED1100B36C14 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CC024E7F02E00B36C14 /* APIError.swift */,
+				57D44CC224E7F04000B36C14 /* Reachablity.swift */,
+				57D44CC424E7F05600B36C14 /* ResponseParser.swift */,
+				57D44CC624E7F06C00B36C14 /* APIRouter.swift */,
+				57D44CC824E7F07E00B36C14 /* SessionManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		57D44CAF24E7ED4E00B36C14 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				577917B724E7137300A6A8F7 /* Main.storyboard */,
+				57D44CD424E7FA0200B36C14 /* Cell */,
+				57D44CCA24E7F45100B36C14 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		57D44CB024E7EE1500B36C14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CD024E7F81100B36C14 /* AlbumSearchViewModel.swift */,
+				57D44CD924E7FDE200B36C14 /* AlbumListCellViewModel.swift */,
+				57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57D44CB124E7EE2B00B36C14 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CAB24E7ECEA00B36C14 /* Extensions */,
+				57D44CBA24E7EF4200B36C14 /* AppStoryboard.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		57D44CCA24E7F45100B36C14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CCC24E7F76300B36C14 /* AlbumSearchViewController.swift */,
+				57D44CCE24E7F78500B36C14 /* AlbumSearchResultViewController.swift */,
+				57D44CE624E83A6600B36C14 /* AlbumDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		57D44CD424E7FA0200B36C14 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				57D44CD524E7FA4300B36C14 /* AlbumListTableViewCell.swift */,
+				57D44CD624E7FA4300B36C14 /* AlbumListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		57D44CE324E81F0800B36C14 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				577917B124E7137300A6A8F7 /* AppDelegate.swift */,
+				577917B324E7137300A6A8F7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7354AA3E17FB483FBFE61F32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46205A8589E8B8C7F08E01A9 /* Pods_WiproAssignment.framework */,
+				3AD73413B0544BDE364BAA75 /* Pods_WiproAssignment_WiproAssignmentUITests.framework */,
+				426B1843A7DA970644CB0DFF /* Pods_WiproAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577917D824E7137800A6A8F7 /* Build configuration list for PBXNativeTarget "WiproAssignment" */;
 			buildPhases = (
+				C65505C547290CF1667E9765 /* [CP] Check Pods Manifest.lock */,
 				577917AA24E7137300A6A8F7 /* Sources */,
 				577917AB24E7137300A6A8F7 /* Frameworks */,
 				577917AC24E7137300A6A8F7 /* Resources */,
+				6F8C22CF447862A9F142F8E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577917DB24E7137800A6A8F7 /* Build configuration list for PBXNativeTarget "WiproAssignmentTests" */;
 			buildPhases = (
+				2B9E7FFFBF6259C01EF88538 /* [CP] Check Pods Manifest.lock */,
 				577917C024E7137800A6A8F7 /* Sources */,
 				577917C124E7137800A6A8F7 /* Frameworks */,
 				577917C224E7137800A6A8F7 /* Resources */,
@@ -170,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577917DE24E7137800A6A8F7 /* Build configuration list for PBXNativeTarget "WiproAssignmentUITests" */;
 			buildPhases = (
+				AD1230E30D6C493956B1F01A /* [CP] Check Pods Manifest.lock */,
 				577917CB24E7137800A6A8F7 /* Sources */,
 				577917CC24E7137800A6A8F7 /* Frameworks */,
 				577917CD24E7137800A6A8F7 /* Resources */,
+				015CCD5211B3BA98CC712270 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +432,7 @@
 				577917BE24E7137800A6A8F7 /* LaunchScreen.storyboard in Resources */,
 				577917BB24E7137800A6A8F7 /* Assets.xcassets in Resources */,
 				577917B924E7137300A6A8F7 /* Main.storyboard in Resources */,
+				57D44CD824E7FA4300B36C14 /* AlbumListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +452,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		015CCD5211B3BA98CC712270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B9E7FFFBF6259C01EF88538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F8C22CF447862A9F142F8E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1230E30D6C493956B1F01A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproAssignment-WiproAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65505C547290CF1667E9765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		577917AA24E7137300A6A8F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577917B624E7137300A6A8F7 /* ViewController.swift in Sources */,
+				57D44CDA24E7FDE200B36C14 /* AlbumListCellViewModel.swift in Sources */,
+				57D44CBB24E7EF4200B36C14 /* AppStoryboard.swift in Sources */,
+				57D44CE724E83A6600B36C14 /* AlbumDetailViewController.swift in Sources */,
+				57D44CE024E806AC00B36C14 /* AlbumSearchResultCoordinator.swift in Sources */,
+				57D44CB724E7EEF000B36C14 /* UIViewController+Extension.swift in Sources */,
+				57D44CC324E7F04000B36C14 /* Reachablity.swift in Sources */,
+				57D44CC124E7F02E00B36C14 /* APIError.swift in Sources */,
+				57D44CDE24E8067800B36C14 /* Coordinator.swift in Sources */,
+				57D44CCF24E7F78500B36C14 /* AlbumSearchResultViewController.swift in Sources */,
+				57D44CB924E7EF0D00B36C14 /* UIImageView+Extension.swift in Sources */,
+				57D44CC924E7F07E00B36C14 /* SessionManager.swift in Sources */,
+				57D44CB524E7EEB300B36C14 /* Array+Extension.swift in Sources */,
+				57D44CBF24E7EFB400B36C14 /* Album.swift in Sources */,
+				57D44CE524E82B2000B36C14 /* AlbumDetailViewModel.swift in Sources */,
+				57D44CCD24E7F76300B36C14 /* AlbumSearchViewController.swift in Sources */,
+				57D44CD724E7FA4300B36C14 /* AlbumListTableViewCell.swift in Sources */,
+				57D44CC724E7F06C00B36C14 /* APIRouter.swift in Sources */,
+				57D44CE924E83BE200B36C14 /* AlbumDetailCoordinator.swift in Sources */,
 				577917B224E7137300A6A8F7 /* AppDelegate.swift in Sources */,
+				57D44CB324E7EE9300B36C14 /* AppDelegate+Extension.swift in Sources */,
+				57D44CDC24E8031200B36C14 /* MainCoordinator.swift in Sources */,
+				57D44CD124E7F81100B36C14 /* AlbumSearchViewModel.swift in Sources */,
 				577917B424E7137300A6A8F7 /* SceneDelegate.swift in Sources */,
+				57D44CC524E7F05600B36C14 /* ResponseParser.swift in Sources */,
+				57D44CD324E7F92D00B36C14 /* UINavigation+Extension.swift in Sources */,
+				57D44CE224E8158000B36C14 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +756,21 @@
 		};
 		577917D924E7137800A6A8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D1CAF0C1D820D13D9ECE3E /* Pods-WiproAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha.WiproAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,16 +778,21 @@
 		};
 		577917DA24E7137800A6A8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FC6C9D16B078E8B3406DFA /* Pods-WiproAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha.WiproAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +800,7 @@
 		};
 		577917DC24E7137800A6A8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8A930A0FE4107FDA149FEB /* Pods-WiproAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +822,7 @@
 		};
 		577917DD24E7137800A6A8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D661C47034FB71C0E392A3A /* Pods-WiproAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +844,7 @@
 		};
 		577917DF24E7137800A6A8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61124D896D55CBC9187FA01 /* Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +864,7 @@
 		};
 		577917E024E7137800A6A8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48F337DC44C824D5C92DBA5 /* Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
