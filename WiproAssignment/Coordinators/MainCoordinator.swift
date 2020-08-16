@@ -29,7 +29,7 @@ class MainCoordinator: Coordinator {
 extension MainCoordinator {
     func showSearchAlbums(searchText: String?) {
         let child = AlbumSearchResultCoordinator(navigationController: navigationController)
-        child.searchViewModel = AlbumSearchViewModel(searchTerm: searchText)
+        child.searchViewModel = AlbumSearchViewModel(searchTerm: searchText ?? "")
         childCoordinators.append(child)
         child.start()
     }

@@ -17,6 +17,7 @@
 		577917BE24E7137800A6A8F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577917BC24E7137800A6A8F7 /* LaunchScreen.storyboard */; };
 		577917C924E7137800A6A8F7 /* WiproAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917C824E7137800A6A8F7 /* WiproAssignmentTests.swift */; };
 		577917D424E7137800A6A8F7 /* WiproAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */; };
+		57D2C09224E9232800B32263 /* AlbumTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2C09124E9232800B32263 /* AlbumTestCases.swift */; };
 		57D44CB324E7EE9300B36C14 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */; };
 		57D44CB524E7EEB300B36C14 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB424E7EEB300B36C14 /* Array+Extension.swift */; };
 		57D44CB724E7EEF000B36C14 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */; };
@@ -81,6 +82,7 @@
 		577917CF24E7137800A6A8F7 /* WiproAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproAssignmentUITests.swift; sourceTree = "<group>"; };
 		577917D524E7137800A6A8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D2C09124E9232800B32263 /* AlbumTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTestCases.swift; sourceTree = "<group>"; };
 		57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		57D44CB424E7EEB300B36C14 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				577917C824E7137800A6A8F7 /* WiproAssignmentTests.swift */,
 				577917CA24E7137800A6A8F7 /* Info.plist */,
+				57D2C09124E9232800B32263 /* AlbumTestCases.swift */,
 			);
 			path = WiproAssignmentTests;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577917C924E7137800A6A8F7 /* WiproAssignmentTests.swift in Sources */,
+				57D2C09224E9232800B32263 /* AlbumTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

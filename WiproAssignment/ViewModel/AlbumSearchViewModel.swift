@@ -9,20 +9,20 @@
 import UIKit
 
 class AlbumSearchViewModel: NSObject {
-    private(set) var searchTerm: String?
+    private(set) var searchTerm: String
     private(set) var searchResult: [Album]?
     
     private let sessionManager: SessionManager
     
-    init(searchTerm: String?, sessionManager: SessionManager = SessionManager.shared) {
+    init(searchTerm: String, sessionManager: SessionManager = SessionManager.shared) {
         self.searchTerm = searchTerm
         self.sessionManager = sessionManager
     }
     
     func searchAlbum(_ completionHandler: @escaping CompletionHandler<ResultResponse>) {
-        guard let theSearchString = searchTerm, !theSearchString.trimmingCharacters(in: .whitespaces).isEmpty else { completionHandler(Result.error(.init(type: .clientError(.insufficientData)))); return }
+        guard isValidSearchString() else { completionHandler(Result.error(.init(type: .clientError(.insufficientData)))); return }
         
-        let request = APIRouter.searchAlbum(name: theSearchString).urlRequest
+        let request = APIRouter.searchAlbum(name: searchTerm).urlRequest
         sessionManager.requestModel(request: request) { [weak self] (response: Result<ResultResponse>) in
             switch response {
             case .success(let data):
@@ -31,5 +31,9 @@ class AlbumSearchViewModel: NSObject {
             case .error(let error): completionHandler(Result.error(error))
             }
         }
+    }
+    
+    func isValidSearchString() -> Bool {
+        return !searchTerm.trimmingCharacters(in: .whitespaces).isEmpty
     }
 }
