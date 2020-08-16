@@ -18,6 +18,9 @@
 		577917C924E7137800A6A8F7 /* WiproAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917C824E7137800A6A8F7 /* WiproAssignmentTests.swift */; };
 		577917D424E7137800A6A8F7 /* WiproAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */; };
 		57D2C09224E9232800B32263 /* AlbumTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2C09124E9232800B32263 /* AlbumTestCases.swift */; };
+		57D2C09724E92EC100B32263 /* SS_search_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D2C09424E92EC000B32263 /* SS_search_home.png */; };
+		57D2C09824E92EC100B32263 /* SS_search_result.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D2C09524E92EC000B32263 /* SS_search_result.png */; };
+		57D2C09A24E92F1B00B32263 /* SS_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D2C09924E92F1B00B32263 /* SS_detail.png */; };
 		57D44CB324E7EE9300B36C14 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */; };
 		57D44CB524E7EEB300B36C14 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB424E7EEB300B36C14 /* Array+Extension.swift */; };
 		57D44CB724E7EEF000B36C14 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */; };
@@ -83,6 +86,9 @@
 		577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproAssignmentUITests.swift; sourceTree = "<group>"; };
 		577917D524E7137800A6A8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D2C09124E9232800B32263 /* AlbumTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTestCases.swift; sourceTree = "<group>"; };
+		57D2C09424E92EC000B32263 /* SS_search_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SS_search_home.png; sourceTree = "<group>"; };
+		57D2C09524E92EC000B32263 /* SS_search_result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SS_search_result.png; sourceTree = "<group>"; };
+		57D2C09924E92F1B00B32263 /* SS_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SS_detail.png; sourceTree = "<group>"; };
 		57D44CB224E7EE9300B36C14 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		57D44CB424E7EEB300B36C14 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		57D44CB624E7EEF000B36C14 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -188,6 +194,9 @@
 				57D44CAA24E7EC9C00B36C14 /* Coordinators */,
 				577917BA24E7137800A6A8F7 /* Assets.xcassets */,
 				577917BC24E7137800A6A8F7 /* LaunchScreen.storyboard */,
+				57D2C09524E92EC000B32263 /* SS_search_result.png */,
+				57D2C09924E92F1B00B32263 /* SS_detail.png */,
+				57D2C09424E92EC000B32263 /* SS_search_home.png */,
 				577917BF24E7137800A6A8F7 /* Info.plist */,
 			);
 			path = WiproAssignment;
@@ -433,8 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				577917BE24E7137800A6A8F7 /* LaunchScreen.storyboard in Resources */,
+				57D2C09A24E92F1B00B32263 /* SS_detail.png in Resources */,
 				577917BB24E7137800A6A8F7 /* Assets.xcassets in Resources */,
+				57D2C09824E92EC100B32263 /* SS_search_result.png in Resources */,
 				577917B924E7137300A6A8F7 /* Main.storyboard in Resources */,
+				57D2C09724E92EC100B32263 /* SS_search_home.png in Resources */,
 				57D44CD824E7FA4300B36C14 /* AlbumListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
