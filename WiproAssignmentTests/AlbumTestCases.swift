@@ -26,14 +26,16 @@ class  AlbumTestCases: XCTestCase {
         let expectation = XCTestExpectation(description: "searchResults")
         vm.searchAlbum({ (result) in
             switch result {
-            case .success(let data):
-                XCTAssertNotNil(data.results?.albummatches.album.isEmpty)
+            case .success:
+                XCTAssertNotNil(vm.searchResult)
+                 XCTAssertTrue(vm.searchResult!.count > 0)
+                 XCTAssertNotNil(vm.searchResult?[safe: 0])
             case .error(let error):
                XCTFail("\(error)")
             }
             expectation.fulfill()
         })
-        wait(for: [expectation], timeout: 20)
+        wait(for: [expectation], timeout: 30)
     }
     
     func testAlbumDetailAPI(){
@@ -48,6 +50,30 @@ class  AlbumTestCases: XCTestCase {
              }
              expectation.fulfill()
          })
-         wait(for: [expectation], timeout: 20)
+         wait(for: [expectation], timeout: 30)
      }
+
+    func testAlbumModel() {
+        let wiki = Wiki(published: "1999-12-12", summary: "ABC", content: "XYZ")
+        let image = Image(text: "http://www.google.com", size: Size.medium.rawValue)
+        let album = Album(name: "Believe", artist: "Cher", url: "http://www.google.com", image: [image], wiki: wiki)
+        XCTAssertNotNil(album)
+        XCTAssertNotNil(album.wiki)
+        XCTAssertEqual(album.name, "Believe")
+        XCTAssertEqual(album.artist, "Cher")
+        XCTAssertEqual(wiki.published, "1999-12-12")
+        XCTAssertEqual(wiki.summary, "ABC")
+        XCTAssertEqual(wiki.content, "XYZ")
+        XCTAssertEqual(image.text, "http://www.google.com")
+        XCTAssertEqual(image.size, Size.medium.rawValue)
+    }
+
+    func testArray(){
+        let wiki = Wiki(published: "1999-12-12", summary: "ABC", content: "XYZ")
+        let image = Image(text: "http://www.google.com", size: Size.medium.rawValue)
+        let album = Album(name: "Believe", artist: "Cher", url: "http://www.google.com", image: [image], wiki: wiki)
+        let albums = [album]
+        XCTAssertNotNil(albums[safe: 0])
+        XCTAssertNil(albums[safe: 1])
+    }
 }
