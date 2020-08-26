@@ -8,7 +8,7 @@
   - Target : iOS 13
 
  ## Album search list screen 
-   - Shows top list of albums, searched results albums from Server.
+   - Shows top list, searched results albums.
    
  ## Album Detail screen 
  - Show Album info such as image, name, description, publish date and source. 
