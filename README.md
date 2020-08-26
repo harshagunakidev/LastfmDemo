@@ -1,8 +1,6 @@
 # LastfmDemo App
 
-- It's application which shows the list of searched albums from server.
-
-# Whats Done:
+- It's application which shows the list of searched albums and respective detailed info from server.
 
   ## Tools
   - Xcode 11
