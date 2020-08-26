@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "577917AD24E7137300A6A8F7"
-               BuildableName = "WiproAssignment.app"
+               BuildableName = "Lastfm Demo.app"
                BlueprintName = "WiproAssignment"
                ReferencedContainer = "container:WiproAssignment.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "577917AD24E7137300A6A8F7"
-            BuildableName = "WiproAssignment.app"
+            BuildableName = "Lastfm Demo.app"
             BlueprintName = "WiproAssignment"
             ReferencedContainer = "container:WiproAssignment.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "577917AD24E7137300A6A8F7"
-            BuildableName = "WiproAssignment.app"
+            BuildableName = "Lastfm Demo.app"
             BlueprintName = "WiproAssignment"
             ReferencedContainer = "container:WiproAssignment.xcodeproj">
          </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "577917AD24E7137300A6A8F7"
-            BuildableName = "WiproAssignment.app"
+            BuildableName = "Lastfm Demo.app"
             BlueprintName = "WiproAssignment"
             ReferencedContainer = "container:WiproAssignment.xcodeproj">
          </BuildableReference>

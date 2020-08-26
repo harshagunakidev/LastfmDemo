@@ -12,7 +12,6 @@ class AlbumDetailCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     var albumDetailViewModel: AlbumDetailViewModel?
-    
     weak var mainCoordinator: MainCoordinator?
     
     init(navigationController: UINavigationController) {

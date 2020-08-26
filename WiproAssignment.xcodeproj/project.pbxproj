@@ -17,6 +17,8 @@
 		577917BE24E7137800A6A8F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577917BC24E7137800A6A8F7 /* LaunchScreen.storyboard */; };
 		577917C924E7137800A6A8F7 /* WiproAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917C824E7137800A6A8F7 /* WiproAssignmentTests.swift */; };
 		577917D424E7137800A6A8F7 /* WiproAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */; };
+		579B5AFB24F421850013D7AF /* TopAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B5AFA24F421850013D7AF /* TopAlbumCollectionViewCell.swift */; };
+		579B5AFD24F422040013D7AF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B5AFC24F422040013D7AF /* HomeViewModel.swift */; };
 		57D2C09224E9232800B32263 /* AlbumTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2C09124E9232800B32263 /* AlbumTestCases.swift */; };
 		57D2C09724E92EC100B32263 /* SS_search_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D2C09424E92EC000B32263 /* SS_search_home.png */; };
 		57D2C09824E92EC100B32263 /* SS_search_result.png in Resources */ = {isa = PBXBuildFile; fileRef = 57D2C09524E92EC000B32263 /* SS_search_result.png */; };
@@ -46,6 +48,7 @@
 		57D44CE524E82B2000B36C14 /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */; };
 		57D44CE724E83A6600B36C14 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE624E83A6600B36C14 /* AlbumDetailViewController.swift */; };
 		57D44CE924E83BE200B36C14 /* AlbumDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D44CE824E83BE200B36C14 /* AlbumDetailCoordinator.swift */; };
+		57F37A9B24F2C03A00FCEA8F /* PagingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F37A9A24F2C03A00FCEA8F /* PagingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +75,7 @@
 		426B1843A7DA970644CB0DFF /* Pods_WiproAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46205A8589E8B8C7F08E01A9 /* Pods_WiproAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D1CAF0C1D820D13D9ECE3E /* Pods-WiproAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment.debug.xcconfig"; path = "Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment.debug.xcconfig"; sourceTree = "<group>"; };
-		577917AE24E7137300A6A8F7 /* WiproAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		577917AE24E7137300A6A8F7 /* Lastfm Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lastfm Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		577917B124E7137300A6A8F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577917B324E7137300A6A8F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		577917B824E7137300A6A8F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 		577917CF24E7137800A6A8F7 /* WiproAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577917D324E7137800A6A8F7 /* WiproAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproAssignmentUITests.swift; sourceTree = "<group>"; };
 		577917D524E7137800A6A8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579B5AFA24F421850013D7AF /* TopAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		579B5AFC24F422040013D7AF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		57D2C09124E9232800B32263 /* AlbumTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTestCases.swift; sourceTree = "<group>"; };
 		57D2C09424E92EC000B32263 /* SS_search_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SS_search_home.png; sourceTree = "<group>"; };
 		57D2C09524E92EC000B32263 /* SS_search_result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SS_search_result.png; sourceTree = "<group>"; };
@@ -114,6 +119,7 @@
 		57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
 		57D44CE624E83A6600B36C14 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		57D44CE824E83BE200B36C14 /* AlbumDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailCoordinator.swift; sourceTree = "<group>"; };
+		57F37A9A24F2C03A00FCEA8F /* PagingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingModel.swift; sourceTree = "<group>"; };
 		A48F337DC44C824D5C92DBA5 /* Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D61124D896D55CBC9187FA01 /* Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-WiproAssignment-WiproAssignmentUITests/Pods-WiproAssignment-WiproAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6FC6C9D16B078E8B3406DFA /* Pods-WiproAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproAssignment.release.xcconfig"; path = "Target Support Files/Pods-WiproAssignment/Pods-WiproAssignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +181,7 @@
 		577917AF24E7137300A6A8F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				577917AE24E7137300A6A8F7 /* WiproAssignment.app */,
+				577917AE24E7137300A6A8F7 /* Lastfm Demo.app */,
 				577917C424E7137800A6A8F7 /* WiproAssignmentTests.xctest */,
 				577917CF24E7137800A6A8F7 /* WiproAssignmentUITests.xctest */,
 			);
@@ -249,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				57D44CBE24E7EFB400B36C14 /* Album.swift */,
+				57F37A9A24F2C03A00FCEA8F /* PagingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 				57D44CD024E7F81100B36C14 /* AlbumSearchViewModel.swift */,
 				57D44CD924E7FDE200B36C14 /* AlbumListCellViewModel.swift */,
 				57D44CE424E82B2000B36C14 /* AlbumDetailViewModel.swift */,
+				579B5AFC24F422040013D7AF /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -309,6 +317,7 @@
 			children = (
 				57D44CD524E7FA4300B36C14 /* AlbumListTableViewCell.swift */,
 				57D44CD624E7FA4300B36C14 /* AlbumListTableViewCell.xib */,
+				579B5AFA24F421850013D7AF /* TopAlbumCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -351,7 +360,7 @@
 			);
 			name = WiproAssignment;
 			productName = WiproAssignment;
-			productReference = 577917AE24E7137300A6A8F7 /* WiproAssignment.app */;
+			productReference = 577917AE24E7137300A6A8F7 /* Lastfm Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		577917C324E7137800A6A8F7 /* WiproAssignmentTests */ = {
@@ -576,8 +585,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D44CDA24E7FDE200B36C14 /* AlbumListCellViewModel.swift in Sources */,
+				57F37A9B24F2C03A00FCEA8F /* PagingModel.swift in Sources */,
 				57D44CBB24E7EF4200B36C14 /* AppStoryboard.swift in Sources */,
 				57D44CE724E83A6600B36C14 /* AlbumDetailViewController.swift in Sources */,
+				579B5AFB24F421850013D7AF /* TopAlbumCollectionViewCell.swift in Sources */,
 				57D44CE024E806AC00B36C14 /* AlbumSearchResultCoordinator.swift in Sources */,
 				57D44CB724E7EEF000B36C14 /* UIViewController+Extension.swift in Sources */,
 				57D44CC324E7F04000B36C14 /* Reachablity.swift in Sources */,
@@ -588,6 +599,7 @@
 				57D44CC924E7F07E00B36C14 /* SessionManager.swift in Sources */,
 				57D44CB524E7EEB300B36C14 /* Array+Extension.swift in Sources */,
 				57D44CBF24E7EFB400B36C14 /* Album.swift in Sources */,
+				579B5AFD24F422040013D7AF /* HomeViewModel.swift in Sources */,
 				57D44CE524E82B2000B36C14 /* AlbumDetailViewModel.swift in Sources */,
 				57D44CCD24E7F76300B36C14 /* AlbumSearchViewController.swift in Sources */,
 				57D44CD724E7FA4300B36C14 /* AlbumListTableViewCell.swift in Sources */,
@@ -785,7 +797,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha.WiproAssignment;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lastfm Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -807,7 +819,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha.WiproAssignment;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lastfm Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

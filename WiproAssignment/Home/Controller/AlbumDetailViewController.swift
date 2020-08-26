@@ -9,17 +9,14 @@
 import UIKit
 
 class AlbumDetailViewController: UIViewController {
-
     @IBOutlet weak var contentHolderView: UIView!
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var publishDateLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
-    
     var albumDetailViewModel: AlbumDetailViewModel?
-    
-     lazy var activityIndicator: UIActivityIndicatorView = {
+    lazy var activityIndicator: UIActivityIndicatorView = {
         let activityView = UIActivityIndicatorView(style: .large)
         activityView.center = self.view.center
         activityView.hidesWhenStopped = true
@@ -34,7 +31,7 @@ class AlbumDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         getAlbum()
+        getAlbum()
     }
     
     func getAlbum() {
@@ -64,5 +61,4 @@ class AlbumDetailViewController: UIViewController {
         self.summaryLabel.text = uwAlbumDetailViewModel.album?.wiki?.summary ?? ""
         self.albumImageView.loadImage(urlString: uwAlbumDetailViewModel.album?.getImage(size: .mega) ?? "")
     }
-
 }

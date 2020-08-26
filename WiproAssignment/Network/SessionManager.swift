@@ -24,6 +24,7 @@ class SessionManager {
     var defaultSession: URLSession { return URLSession(configuration: defaultSessionConfiguration) }
     static let timoutInterval: Double = 60.0
     static let `shared` = SessionManager()
+    var task: URLSessionDataTask?
     private init() { }
     
     private lazy var defaultSessionConfiguration : URLSessionConfiguration = {
@@ -43,7 +44,7 @@ extension SessionManager {
         if !reachabilty.isConnectedToNetwork() {
             completionHandler(.error(APIError(type: .clientError(.noInternetConnection))))
         }
-        self.dataTask(withRequest: request) { (result: Result<T>) in
+         self.dataTask(withRequest: request) { (result: Result<T>) in
             switch result {
             case .success(let data):
                 completionHandler(Result.success(data))
@@ -57,7 +58,8 @@ extension SessionManager {
 
 fileprivate extension SessionManager {
     func dataTask<T: Codable>(withRequest request: URLRequest,  completion: @escaping CompletionHandler<T>) {
-        self.defaultSession.dataTask(with: request) { (data, response, error) in
+         task = self.defaultSession.dataTask(with: request) { (data, response, error) in
+            self.task = nil
             if let _ = error {
                 completion(.error(APIError(type: .clientError(.invalidURL))))
                 return
@@ -110,6 +112,7 @@ fileprivate extension SessionManager {
                     completion(.error(APIError(type: .serverError(.unknownError), code: responseStatusCode)))
                 }
             }
-         }.resume()
+        }
+        task?.resume()
     }
 }

@@ -11,15 +11,15 @@ import Foundation
 struct ResultResponse: Codable {
     var results: AlbumSearchResponse?
     var album: Album?
+    var topalbums: AlbumResponse?
 }
-
 
 // MARK: - AlbumSearchResponse
 struct AlbumSearchResponse: Codable {
-    let opensearchQuery: OpensearchQuery
-    let opensearchTotalResults, opensearchStartIndex, opensearchItemsPerPage: String
-    let albummatches: Albummatches
-    let attr: Attr
+    var opensearchQuery: OpensearchQuery?
+    var opensearchTotalResults, opensearchStartIndex, opensearchItemsPerPage: String?
+    var albummatches: Albummatches?
+    var attr: Attr?
 
     enum CodingKeys: String, CodingKey {
         case opensearchQuery = "opensearch:Query"
@@ -33,25 +33,25 @@ struct AlbumSearchResponse: Codable {
 
 // MARK: - Albummatches
 struct Albummatches: Codable {
-    let album: [Album]
+    var album: [Album]?
 }
 
 // MARK: - Album
 struct Album: Codable {
-    let name, artist: String
-    let url: String
-    let image: [Image]
-    let wiki: Wiki?
-    
+    var name, artist: String?
+    var url: String?
+    var image: [Image]?
+    var wiki: Wiki?
+        
     func getImage(size: Size) -> String {
-        return image.filter({ $0.size == size.rawValue }).first?.text ?? ""
+        return image?.filter({ $0.size == size.rawValue }).first?.text ?? ""
     }
 }
 
 // MARK: - Image
 struct Image: Codable {
-    let text: String
-    let size: String
+    var text: String?
+    var size: String?
 
     enum CodingKeys: String, CodingKey {
         case text = "#text"
@@ -69,7 +69,7 @@ enum Size: String, Codable {
 
 // MARK: - Attr
 struct Attr: Codable {
-    let attrFor: String
+    var attrFor: String?
 
     enum CodingKeys: String, CodingKey {
         case attrFor = "for"
@@ -78,7 +78,7 @@ struct Attr: Codable {
 
 // MARK: - OpensearchQuery
 struct OpensearchQuery: Codable {
-    let text, role, searchTerms, startPage: String
+    var text, role, searchTerms, startPage: String?
 
     enum CodingKeys: String, CodingKey {
         case text = "#text"
@@ -87,5 +87,41 @@ struct OpensearchQuery: Codable {
 }
 // MARK: - Wiki
 struct Wiki: Codable {
-    let published, summary, content: String
+    var published, summary, content: String?
 }
+
+// MARK: - Artist
+struct Artist: Codable {
+    let url: String
+    let name, mbid: String
+}
+
+struct AlbumResponse: Codable {
+    var album: [TopAlbum]?
+}
+
+// MARK: - Album
+struct TopAlbum: Codable {
+    var artist: Artist?
+    var image: [Image]?
+    var playcount: String?
+    var url: String?
+    var name, mbid: String?
+
+    enum CodingKeys: String, CodingKey {
+        case artist
+        case image, playcount, url, name, mbid
+    }
+    func getImage(size: Size) -> String {
+         return image?.filter({ $0.size == size.rawValue }).first?.text ?? ""
+     }
+}
+
+extension Album: Equatable {
+  static func == (lhs: Album, rhs: Album) -> Bool {
+    return lhs.name == rhs.name &&
+    lhs.artist == rhs.artist &&
+    lhs.url == rhs.url
+  }
+}
+

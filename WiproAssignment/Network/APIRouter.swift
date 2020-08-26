@@ -11,8 +11,9 @@ import Foundation
 enum APIRouter {
     private var baseUrl: String { return BaseURL.urlString }
 
-    case searchAlbum(name: String)
+    case searchAlbum(name: String,page: Int, pageSize: Int)
     case albumGetInfo(artist: String, album: String)
+    case getTopAlbums
 }
 
 struct APIClient {
@@ -20,7 +21,7 @@ struct APIClient {
 }
 
 extension APIRouter {
-    var httpMethod: HTTPMethod { switch self { case .searchAlbum, .albumGetInfo: return .get } }
+    var httpMethod: HTTPMethod { switch self { case .searchAlbum, .albumGetInfo, .getTopAlbums: return .get } }
     
     var headers: [String: String] {
         return [:]
@@ -28,20 +29,25 @@ extension APIRouter {
     
     var body: Data? {
         switch self {
-        case .searchAlbum, .albumGetInfo: return nil
+        case .searchAlbum, .albumGetInfo, .getTopAlbums: return nil
         }
     }
     
     var parameters: [String: String] {
         var parameters = [String: String]()
         switch self {
-        case .searchAlbum(let name):
+        case .searchAlbum(let name, let page, let pageSize):
             parameters["method"] = "album.search"
             parameters["album"] = name
+            parameters["page"] = page.description
+            parameters["limit"] = pageSize.description
         case .albumGetInfo(let artist,let album):
             parameters["method"] = "album.getinfo"
             parameters["album"] = album
             parameters["artist"] = artist
+        case .getTopAlbums:
+            parameters["method"] = "user.gettopalbums"
+            parameters["user"] = "rj"
         }
         parameters["api_key"] = APIClient.key
         parameters["format"] = "json"
@@ -49,7 +55,7 @@ extension APIRouter {
     }
     
     var path: String {
-        switch self { case .searchAlbum, .albumGetInfo: return "/2.0/" }
+        switch self { case .searchAlbum, .albumGetInfo, .getTopAlbums: return "/2.0/" }
     }
 }
 

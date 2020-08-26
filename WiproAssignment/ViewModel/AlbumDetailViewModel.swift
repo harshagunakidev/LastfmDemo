@@ -10,7 +10,6 @@ import Foundation
 
 class AlbumDetailViewModel {
     private(set) var album: Album?
-    
     private let sessionManager: SessionManager
     private var albumName: String
     private var artist: String

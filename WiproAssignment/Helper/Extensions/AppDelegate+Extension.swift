@@ -19,5 +19,9 @@ extension SceneDelegate {
         self.window = window
         window.makeKeyAndVisible()
     }
+    
+    func searchResultCoordinator(navVC: UINavigationController) -> Coordinator {
+        return AlbumSearchResultCoordinator.init(navigationController: navVC)
+    }
 }
 

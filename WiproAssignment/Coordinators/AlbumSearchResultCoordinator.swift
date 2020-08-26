@@ -12,7 +12,6 @@ class AlbumSearchResultCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     var searchViewModel: AlbumSearchViewModel?
-    
     weak var mainCoordinator: MainCoordinator?
     
     init(navigationController: UINavigationController) {
@@ -27,19 +26,18 @@ class AlbumSearchResultCoordinator: Coordinator {
             self?.mainCoordinator?.childDidFinish(child: self)
             self?.navigationController.popViewController(animated: false)
         }
-        
         controller.onSelectAlbum = {
            [weak self] (viewModel) in
             self?.showAlbumDetail(viewModel: viewModel)
         }
-        navigationController.pushViewController(controller, animated: true)
+        navigationController.pushViewController(controller, animated: false)
     }
 }
 
 extension AlbumSearchResultCoordinator {
     func showAlbumDetail(viewModel: AlbumListCellViewModel) {
         let child = AlbumDetailCoordinator(navigationController: navigationController)
-        child.albumDetailViewModel = AlbumDetailViewModel.init(album: viewModel.name, artist:  viewModel.artist)
+        child.albumDetailViewModel = AlbumDetailViewModel(album: viewModel.name, artist:  viewModel.artist)
         childCoordinators.append(child)
         child.start()
     }

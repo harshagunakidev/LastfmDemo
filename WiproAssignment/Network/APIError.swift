@@ -21,7 +21,6 @@ struct APIError {
 }
 
 enum APIErrorType {
-
     internal enum ClientErrorType {
         case invalidURL //Error returned by URLSession
         case jsonParsingError //Error in parsing the response, catch block of JSONSerialization
@@ -29,7 +28,6 @@ enum APIErrorType {
         case nilResponse // Response after parsing (feed) is nil
         case insufficientData //If body doesn't contain all the required data
         case noInternetConnection //If body doesn't contain all the required data
-
         var errorMessage: String {
             let text: String
             switch self {
@@ -55,7 +53,6 @@ enum APIErrorType {
         case serviceUnavailable //503
         case gatewayTimeout //504
         case unknownError //Unknown Error
-        
         var errorMessage: String {
             let text: String
             switch self {
@@ -73,10 +70,8 @@ enum APIErrorType {
             return text
         }
     }
-    
     case clientError(ClientErrorType)
     case serverError(ServerErrorType)
-    
     var errorMessage: String {
         let text: String
         switch self {
